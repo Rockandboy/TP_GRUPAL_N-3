@@ -14,9 +14,13 @@ namespace Ejercicio1_TP3
 
         }
 
-        protected void TextBox1_TextChanged(object sender, EventArgs e)
+        protected void btGuardarLoc_Click(object sender, EventArgs e)
         {
-
+            if (txtLocalidad.Text.Length > 0)
+            {
+             txtLocalidad.Text = "";
+            }
         }
+
     }
 }

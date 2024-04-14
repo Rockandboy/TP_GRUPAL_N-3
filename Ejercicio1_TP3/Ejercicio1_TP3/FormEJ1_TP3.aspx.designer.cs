@@ -33,13 +33,22 @@ namespace Ejercicio1_TP3
         protected global::System.Web.UI.WebControls.Label lbLocalidades;
 
         /// <summary>
-        /// Control tbLocalidad.
+        /// Control txtLocalidad.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbLocalidad;
+        protected global::System.Web.UI.WebControls.TextBox txtLocalidad;
+
+        /// <summary>
+        /// Control rfvLocalidad.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvLocalidad;
 
         /// <summary>
         /// Control btGuardarLoc.
@@ -69,13 +78,13 @@ namespace Ejercicio1_TP3
         protected global::System.Web.UI.WebControls.Label lbNombreUsuario;
 
         /// <summary>
-        /// Control TextBox1.
+        /// Control txtUsuario.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox txtUsuario;
 
         /// <summary>
         /// Control lbPass.
@@ -87,13 +96,13 @@ namespace Ejercicio1_TP3
         protected global::System.Web.UI.WebControls.Label lbPass;
 
         /// <summary>
-        /// Control TextBox2.
+        /// Control txtPassword.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox txtPassword;
 
         /// <summary>
         /// Control lbRepetirPass.
@@ -105,13 +114,13 @@ namespace Ejercicio1_TP3
         protected global::System.Web.UI.WebControls.Label lbRepetirPass;
 
         /// <summary>
-        /// Control TextBox3.
+        /// Control txtRepeatPass.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        protected global::System.Web.UI.WebControls.TextBox txtRepeatPass;
 
         /// <summary>
         /// Control lbEmail.
@@ -123,13 +132,13 @@ namespace Ejercicio1_TP3
         protected global::System.Web.UI.WebControls.Label lbEmail;
 
         /// <summary>
-        /// Control TextBox4.
+        /// Control txtEmail.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox4;
+        protected global::System.Web.UI.WebControls.TextBox txtEmail;
 
         /// <summary>
         /// Control lbCP.
@@ -141,13 +150,13 @@ namespace Ejercicio1_TP3
         protected global::System.Web.UI.WebControls.Label lbCP;
 
         /// <summary>
-        /// Control TextBox5.
+        /// Control txtCP.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox5;
+        protected global::System.Web.UI.WebControls.TextBox txtCP;
 
         /// <summary>
         /// Control lbElegirLocalidad.
@@ -159,13 +168,13 @@ namespace Ejercicio1_TP3
         protected global::System.Web.UI.WebControls.Label lbElegirLocalidad;
 
         /// <summary>
-        /// Control DropDownList1.
+        /// Control ddlLocalidades.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.DropDownList ddlLocalidades;
 
         /// <summary>
         /// Control btGuardarUsuario.
