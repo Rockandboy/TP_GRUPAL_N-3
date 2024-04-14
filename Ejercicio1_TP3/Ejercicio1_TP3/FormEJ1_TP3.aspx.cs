@@ -16,8 +16,9 @@ namespace Ejercicio1_TP3
 
         protected void btGuardarLoc_Click(object sender, EventArgs e)
         {
+           
             // Agrega la localidad al DropDownList
-            string localidad = txtLocalidad.Text;
+            string localidad = txtLocalidad.Text.Trim();
             ddlLocalidades.Items.Add(new ListItem(localidad, localidad));
 
             if (txtLocalidad.Text.Length > 0)
