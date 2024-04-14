@@ -131,6 +131,15 @@
         .auto-style57 {
             height: 29px;
         }
+        .auto-style58 {
+            width: 131px;
+            text-align: right;
+            height: 29px;
+        }
+        .auto-style59 {
+            width: 127px;
+            height: 29px;
+        }
     </style>
 </head>
 <body>
@@ -142,6 +151,7 @@
                     <td class="auto-style35"></td>
                     <td class="auto-style36"></td>
                     <td class="auto-style46"></td>
+                    <td class="auto-style46">&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style33"></td>
@@ -158,11 +168,14 @@
                     </td>
                     <td class="auto-style34">
                     </td>
+                    <td class="auto-style34">
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style31">&nbsp;</td>
                     <td class="auto-style37">&nbsp;</td>
                     <td class="auto-style38">&nbsp;</td>
+                    <td class="auto-style47">&nbsp;</td>
                     <td class="auto-style47">&nbsp;</td>
                 </tr>
                 <tr>
@@ -174,6 +187,8 @@
                     <td class="auto-style30">
                         <asp:RequiredFieldValidator ID="rfvLocalidad" runat="server" ControlToValidate="txtLocalidad" ErrorMessage="Ingrese una localidad"></asp:RequiredFieldValidator>
                     </td>
+                    <td class="auto-style30">
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style33"></td>
@@ -182,13 +197,17 @@
                         <asp:Button ID="btGuardarLoc" runat="server" Text="Guardar Localidad" Width="199px" OnClick="btGuardarLoc_Click" />
                     </td>
                     <td class="auto-style45">
+                        <asp:RegularExpressionValidator ID="RevLocalidad" runat="server" ControlToValidate="txtLocalidad" ErrorMessage="Ingrese una localidad valida" ValidationExpression="^[a-zA-Z0-9\sáéíóúÁÉÍÓÚüÜñÑ.]+$">Ingrese una localidad Valida</asp:RegularExpressionValidator>
                         </td>
+                    <td class="auto-style45">
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style53"></td>
                     <td class="auto-style54"></td>
                     <td class="auto-style55"></td>
                     <td class="auto-style56"></td>
+                    <td class="auto-style56">&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style51"></td>
@@ -203,6 +222,8 @@
                     </td>
                     <td class="auto-style57">
                         </td>
+                    <td class="auto-style57">
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style13"></td>
@@ -214,6 +235,8 @@
                     </td>
                     <td class="auto-style48">
                         </td>
+                    <td class="auto-style48">
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style13"></td>
@@ -225,6 +248,8 @@
                     </td>
                     <td class="auto-style48">
                         </td>
+                    <td class="auto-style48">
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style13"></td>
@@ -236,17 +261,22 @@
                     </td>
                     <td class="auto-style48">
                         </td>
+                    <td class="auto-style48">
+                        &nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style31">&nbsp;</td>
-                    <td class="auto-style39">
+                    <td class="auto-style51"></td>
+                    <td class="auto-style58">
                         <asp:Label ID="lbEmail" runat="server" Text="Email:"></asp:Label>
                     </td>
-                    <td class="auto-style38">
+                    <td class="auto-style50">
                         <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
                     </td>
-                    <td class="auto-style47">
-                        &nbsp;</td>
+                    <td class="auto-style59">
+                        <asp:RegularExpressionValidator ID="RevEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="Ingrese un Email Validoç" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">*</asp:RegularExpressionValidator>
+                    </td>
+                    <td class="auto-style59">
+                        </td>
                 </tr>
                 <tr>
                     <td class="auto-style31">&nbsp;</td>
@@ -256,6 +286,8 @@
                     <td class="auto-style38">
                         <asp:TextBox ID="txtCP" runat="server"></asp:TextBox>
                     </td>
+                    <td class="auto-style47">
+                        &nbsp;</td>
                     <td class="auto-style47">
                         &nbsp;</td>
                 </tr>
@@ -270,11 +302,14 @@
                     </td>
                     <td class="auto-style47">
                         &nbsp;</td>
+                    <td class="auto-style47">
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style31">&nbsp;</td>
                     <td class="auto-style37">&nbsp;</td>
                     <td class="auto-style38">&nbsp;</td>
+                    <td class="auto-style47">&nbsp;</td>
                     <td class="auto-style47">&nbsp;</td>
                 </tr>
                 <tr>
@@ -285,11 +320,14 @@
                     </td>
                     <td class="auto-style47">
                         &nbsp;</td>
+                    <td class="auto-style47">
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style31">&nbsp;</td>
                     <td class="auto-style37">&nbsp;</td>
                     <td class="auto-style38">&nbsp;</td>
+                    <td class="auto-style47">&nbsp;</td>
                     <td class="auto-style47">&nbsp;</td>
                 </tr>
                 <tr>
@@ -299,11 +337,13 @@
                     </td>
                     <td class="auto-style38">&nbsp;</td>
                     <td class="auto-style47">&nbsp;</td>
+                    <td class="auto-style47">&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style31">&nbsp;</td>
                     <td class="auto-style37">&nbsp;</td>
                     <td class="auto-style38">&nbsp;</td>
+                    <td class="auto-style47">&nbsp;</td>
                     <td class="auto-style47">&nbsp;</td>
                 </tr>
             </table>

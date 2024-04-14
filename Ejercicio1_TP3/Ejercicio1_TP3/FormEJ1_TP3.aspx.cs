@@ -21,6 +21,7 @@ namespace Ejercicio1_TP3
             string localidad = txtLocalidad.Text.Trim();
             ddlLocalidades.Items.Add(new ListItem(localidad, localidad));
 
+
             if (txtLocalidad.Text.Length > 0)
             {
              txtLocalidad.Text = "";
@@ -35,8 +36,15 @@ namespace Ejercicio1_TP3
         protected void ddlLocalidades_SelectedIndexChanged(object sender, EventArgs e)
         {
            
-          //  string localidadSeleccionada = ddlLocalidades.SelectedValue;
           
+          
+        }
+
+        protected void btGuardarUsuario_Click(object sender, EventArgs e)
+        {
+            // Limpia el DropDownList (ddlLocalidades)
+            ddlLocalidades.ClearSelection();
+            
         }
     }
 }
