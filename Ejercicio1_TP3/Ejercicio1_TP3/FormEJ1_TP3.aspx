@@ -169,7 +169,7 @@
                     <td class="auto-style31">&nbsp;</td>
                     <td class="auto-style39">Nombre de localidad</td>
                     <td class="auto-style40">
-                        <asp:TextBox ID="txtLocalidad" runat="server" Width="195px"></asp:TextBox>
+                        <asp:TextBox ID="txtLocalidad" runat="server" Width="195px" OnTextChanged="txtLocalidad_TextChanged"></asp:TextBox>
                     </td>
                     <td class="auto-style30">
                         <asp:RequiredFieldValidator ID="rfvLocalidad" runat="server" ControlToValidate="txtLocalidad" ErrorMessage="Ingrese una localidad"></asp:RequiredFieldValidator>
@@ -235,7 +235,7 @@
                         <asp:TextBox ID="txtRepeatPass" runat="server"></asp:TextBox>
                     </td>
                     <td class="auto-style48">
-                        &nbsp;</td>
+                        </td>
                 </tr>
                 <tr>
                     <td class="auto-style31">&nbsp;</td>
@@ -265,7 +265,7 @@
                         <asp:Label ID="lbElegirLocalidad" runat="server" Text="Localidades"></asp:Label>
                     </td>
                     <td class="auto-style38">
-                        <asp:DropDownList ID="ddlLocalidades" runat="server">
+                        <asp:DropDownList ID="ddlLocalidades" runat="server" OnSelectedIndexChanged="ddlLocalidades_SelectedIndexChanged">
                         </asp:DropDownList>
                     </td>
                     <td class="auto-style47">
