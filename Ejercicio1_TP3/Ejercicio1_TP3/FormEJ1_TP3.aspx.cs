@@ -11,7 +11,12 @@ namespace Ejercicio1_TP3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (IsPostBack == false)
+            {
+                ddlLocalidades.Items.Add("Roque Perez");
+                ddlLocalidades.Items.Add("Gral. Pacheco");
+                ddlLocalidades.Items.Add("Lobos");
+            }
         }
 
         protected void btGuardarLoc_Click(object sender, EventArgs e)
@@ -19,24 +24,18 @@ namespace Ejercicio1_TP3
            
             // Agrega la localidad al DropDownList
             string localidad = txtLocalidad.Text.Trim();
-            ddlLocalidades.Items.Add(new ListItem(localidad, localidad));
-
-
-            if (txtLocalidad.Text.Length > 0)
+            if (cvLocalidad.IsValid)
             {
-             txtLocalidad.Text = "";
-            
-            
+                ddlLocalidades.Items.Add(new ListItem(localidad, localidad));
+                txtLocalidad.Text = "";
             }
+
+
         }
-        protected void txtLocalidad_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
+ 
         protected void ddlLocalidades_SelectedIndexChanged(object sender, EventArgs e)
         {
            
-          
           
         }
 
@@ -46,5 +45,25 @@ namespace Ejercicio1_TP3
             ddlLocalidades.ClearSelection();
             
         }
+
+        private bool Loc_Repetida(string localidad)
+        {
+            foreach (ListItem i in ddlLocalidades.Items)
+            {
+                if (i.ToString() == localidad)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        protected void cvLocalidad_ServerValidate(object source, ServerValidateEventArgs args)
+        {
+            args.IsValid = Loc_Repetida(txtLocalidad.Text);
+        }
+
+
+
     }
 }

@@ -51,6 +51,15 @@ namespace Ejercicio1_TP3
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvLocalidad;
 
         /// <summary>
+        /// Control cvLocalidad.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator cvLocalidad;
+
+        /// <summary>
         /// Control btGuardarLoc.
         /// </summary>
         /// <remarks>
@@ -132,6 +141,15 @@ namespace Ejercicio1_TP3
         protected global::System.Web.UI.WebControls.TextBox txtRepeatPass;
 
         /// <summary>
+        /// Control cvPass.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator cvPass;
+
+        /// <summary>
         /// Control lbEmail.
         /// </summary>
         /// <remarks>
@@ -175,15 +193,6 @@ namespace Ejercicio1_TP3
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtCP;
-
-        /// <summary>
-        /// Control RevCP.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RevCP;
 
         /// <summary>
         /// Control lbElegirLocalidad.
