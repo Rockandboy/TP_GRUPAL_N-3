@@ -50,7 +50,8 @@ namespace Ejercicio1_TP3
         {
             foreach (ListItem i in ddlLocalidades.Items)
             {
-                if (i.ToString() == localidad)
+                string loca = i.ToString();
+                if (loca.ToUpper() == localidad.ToUpper())
                 {
                     return false;
                 }
