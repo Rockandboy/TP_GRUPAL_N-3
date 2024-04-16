@@ -39,13 +39,7 @@ namespace Ejercicio1_TP3
           
         }
 
-        protected void btGuardarUsuario_Click(object sender, EventArgs e)
-        {
-            
-          // Limpia el DropDownList (ddlLocalidades)
-            ddlLocalidades.ClearSelection();
-            
-        }
+      
 
         private bool Loc_Repetida(string localidad)
         {
@@ -66,10 +60,17 @@ namespace Ejercicio1_TP3
         }
 
         protected void btGuardarUsuario_Click1(object sender, EventArgs e)
-        {     
+        {
+            string CodigoPostal = txtCP.Text.Trim();
+            string Usuario = txtUsuario.Text.Trim();
+            string Email = txtEmail.Text.Trim();
+            lblMensajeUsuario.Text = "Bienvenido/a " + Usuario;
+            // Limpia el DropDownList (ddlLocalidades)
+            ddlLocalidades.ClearSelection();
+            txtCP.Text="";
+            txtUsuario.Text = "";
+            txtEmail.Text = "";
            
-            
         }
-
     }
  }

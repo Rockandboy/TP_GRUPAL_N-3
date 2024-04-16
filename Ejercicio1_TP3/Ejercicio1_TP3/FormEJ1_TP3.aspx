@@ -390,7 +390,7 @@
                     <td class="auto-style73"></td>
                     <td class="auto-style74"></td>
                     <td class="auto-style75">
-                        <asp:Button ID="btGuardarUsuario" runat="server" Text="Guardar Usuario" Width="202px" ValidationGroup="grupo1" />
+                        <asp:Button ID="btGuardarUsuario" runat="server" Text="Guardar Usuario" Width="202px" ValidationGroup="grupo1" OnClick="btGuardarUsuario_Click1" />
                     </td>
                     <td class="auto-style76">
                         <asp:Label ID="lblMensajeUsuario" runat="server"></asp:Label>
