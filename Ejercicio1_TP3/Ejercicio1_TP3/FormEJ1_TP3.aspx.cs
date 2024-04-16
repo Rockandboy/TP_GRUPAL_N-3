@@ -41,7 +41,8 @@ namespace Ejercicio1_TP3
 
         protected void btGuardarUsuario_Click(object sender, EventArgs e)
         {
-            // Limpia el DropDownList (ddlLocalidades)
+            
+          // Limpia el DropDownList (ddlLocalidades)
             ddlLocalidades.ClearSelection();
             
         }
@@ -64,7 +65,11 @@ namespace Ejercicio1_TP3
             args.IsValid = Loc_Repetida(txtLocalidad.Text);
         }
 
-
+        protected void btGuardarUsuario_Click1(object sender, EventArgs e)
+        {     
+           
+            
+        }
 
     }
-}
+ }

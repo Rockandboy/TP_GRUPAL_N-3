@@ -54,38 +54,38 @@
             height: 23px;
         }
         .auto-style36 {
-            width: 199px;
+            width: 180px;
             height: 23px;
         }
         .auto-style37 {
             width: 131px;
         }
         .auto-style38 {
-            width: 199px;
+            width: 180px;
         }
         .auto-style39 {
             width: 131px;
             text-align: right;
         }
         .auto-style40 {
-            width: 199px;
+            width: 180px;
             text-align: left;
         }
         .auto-style41 {
-            width: 199px;
+            width: 180px;
             height: 26px;
         }
         .auto-style42 {
             text-align: center;
             height: 30px;
-            width: 199px;
+            width: 180px;
         }
         .auto-style43 {
             width: 131px;
             height: 30px;
         }
         .auto-style44 {
-            width: 199px;
+            width: 180px;
             text-align: left;
             height: 30px;
         }
@@ -106,7 +106,7 @@
             height: 26px;
         }
         .auto-style50 {
-            width: 199px;
+            width: 180px;
             height: 29px;
         }
         .auto-style51 {
@@ -122,7 +122,7 @@
             height: 21px;
         }
         .auto-style55 {
-            width: 199px;
+            width: 180px;
             height: 21px;
         }
         .auto-style56 {
@@ -130,11 +130,6 @@
             height: 21px;
         }
         .auto-style57 {
-            height: 29px;
-        }
-        .auto-style58 {
-            width: 131px;
-            text-align: right;
             height: 29px;
         }
         .auto-style63 {
@@ -173,6 +168,47 @@
         .auto-style72 {
             height: 29px;
             width: 276px;
+        }
+        .auto-style73 {
+            width: 11px;
+            height: 33px;
+        }
+        .auto-style74 {
+            width: 131px;
+            height: 33px;
+        }
+        .auto-style75 {
+            width: 180px;
+            height: 33px;
+        }
+        .auto-style76 {
+            width: 193px;
+            height: 33px;
+        }
+        .auto-style77 {
+            width: 276px;
+            height: 33px;
+        }
+        .auto-style78 {
+            height: 7px;
+            width: 11px;
+        }
+        .auto-style79 {
+            width: 131px;
+            text-align: right;
+            height: 7px;
+        }
+        .auto-style80 {
+            width: 180px;
+            height: 7px;
+        }
+        .auto-style81 {
+            width: 193px;
+            height: 7px;
+        }
+        .auto-style82 {
+            width: 276px;
+            height: 7px;
         }
     </style>
 </head>
@@ -267,7 +303,7 @@
                         <asp:Label ID="lbNombreUsuario" runat="server" Text="Nombre Usuario"></asp:Label>
                     </td>
                     <td class="auto-style41">
-                        <asp:TextBox ID="txtUsuario" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtUsuario" runat="server" ValidationGroup="grupo1"></asp:TextBox>
                     </td>
                     <td class="auto-style67">
                         </td>
@@ -280,7 +316,7 @@
                         <asp:Label ID="lbPass" runat="server" Text="Contraseña:"></asp:Label>
                     </td>
                     <td class="auto-style41">
-                        <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
+                        <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" ValidationGroup="grupo1"></asp:TextBox>
                     </td>
                     <td class="auto-style67">
                         </td>
@@ -293,41 +329,41 @@
                         <asp:Label ID="lbRepetirPass" runat="server" Text="Repetir Contraseña"></asp:Label>
                     </td>
                     <td class="auto-style41">
-                        <asp:TextBox ID="txtRepeatPass" runat="server" TextMode="Password"></asp:TextBox>
+                        <asp:TextBox ID="txtRepeatPass" runat="server" TextMode="Password" ValidationGroup="grupo1"></asp:TextBox>
                     </td>
                     <td class="auto-style67">
-                        <asp:CompareValidator ID="cvPass" runat="server" ControlToCompare="txtPassword" ControlToValidate="txtRepeatPass" ErrorMessage="La contraseña debe concidir">La contraseña debe concidir</asp:CompareValidator>
+                        <asp:CompareValidator ID="cvPass" runat="server" ControlToCompare="txtPassword" ControlToValidate="txtRepeatPass" ErrorMessage="La contraseña debe concidir" ValidationGroup="grupo1">La contraseña debe concidir</asp:CompareValidator>
                         </td>
                     <td class="auto-style48">
                         &nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style51"></td>
-                    <td class="auto-style58">
+                    <td class="auto-style31"></td>
+                    <td class="auto-style39">
                         <asp:Label ID="lbEmail" runat="server" Text="Email:"></asp:Label>
                     </td>
-                    <td class="auto-style50">
-                        <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+                    <td class="auto-style38">
+                        <asp:TextBox ID="txtEmail" runat="server" Height="20px" ValidationGroup="grupo1"></asp:TextBox>
                     </td>
-                    <td class="auto-style66">
-                        <asp:RegularExpressionValidator ID="RevEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="Ingrese un Email valido" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">Ingrese un Email Valido</asp:RegularExpressionValidator>
+                    <td class="auto-style70">
+                        <asp:RegularExpressionValidator ID="RevEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="Ingrese un Email valido" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ValidationGroup="grupo1">Ingrese un Email Valido</asp:RegularExpressionValidator>
                     </td>
-                    <td class="auto-style72">
+                    <td class="auto-style47">
                         </td>
                 </tr>
                 <tr>
-                    <td class="auto-style31">&nbsp;</td>
-                    <td class="auto-style39">
+                    <td class="auto-style78"></td>
+                    <td class="auto-style79">
                         <asp:Label ID="lbCP" runat="server" Text="CP:"></asp:Label>
                     </td>
-                    <td class="auto-style38">
-                        <asp:TextBox ID="txtCP" runat="server"></asp:TextBox>
+                    <td class="auto-style80">
+                        <asp:TextBox ID="txtCP" runat="server" ValidationGroup="grupo1"></asp:TextBox>
                     </td>
-                    <td class="auto-style70">
-                        <asp:RegularExpressionValidator ID="rvCodigoPostal" runat="server" ControlToValidate="txtCP" ErrorMessage="RegularExpressionValidator" ValidationExpression="^\d{4}$">Debe ingresar un codigo postal valido</asp:RegularExpressionValidator>
+                    <td class="auto-style81">
+                        <asp:RegularExpressionValidator ID="rvCodigoPostal" runat="server" ControlToValidate="txtCP" ErrorMessage="RegularExpressionValidator" ValidationExpression="^\d{4}$" ValidationGroup="grupo1">Debe ingresar un codigo postal valido</asp:RegularExpressionValidator>
                     </td>
-                    <td class="auto-style47">
-                        &nbsp;</td>
+                    <td class="auto-style82">
+                        </td>
                 </tr>
                 <tr>
                     <td class="auto-style31">&nbsp;</td>
@@ -335,7 +371,7 @@
                         <asp:Label ID="lbElegirLocalidad" runat="server" Text="Localidades"></asp:Label>
                     </td>
                     <td class="auto-style38">
-                        <asp:DropDownList ID="ddlLocalidades" runat="server" OnSelectedIndexChanged="ddlLocalidades_SelectedIndexChanged">
+                        <asp:DropDownList ID="ddlLocalidades" runat="server" OnSelectedIndexChanged="ddlLocalidades_SelectedIndexChanged" ValidationGroup="grupo1">
                         </asp:DropDownList>
                     </td>
                     <td class="auto-style70">
@@ -351,15 +387,16 @@
                     <td class="auto-style47">&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style31">&nbsp;</td>
-                    <td class="auto-style37">&nbsp;</td>
-                    <td class="auto-style38">
-                        <asp:Button ID="btGuardarUsuario" runat="server" Text="Guardar Usuario" Width="202px" />
+                    <td class="auto-style73"></td>
+                    <td class="auto-style74"></td>
+                    <td class="auto-style75">
+                        <asp:Button ID="btGuardarUsuario" runat="server" Text="Guardar Usuario" Width="202px" ValidationGroup="grupo1" />
                     </td>
-                    <td class="auto-style70">
-                        &nbsp;</td>
-                    <td class="auto-style47">
-                        &nbsp;</td>
+                    <td class="auto-style76">
+                        <asp:Label ID="lblMensajeUsuario" runat="server"></asp:Label>
+                    </td>
+                    <td class="auto-style77">
+                        </td>
                 </tr>
                 <tr>
                     <td class="auto-style31">&nbsp;</td>
