@@ -324,7 +324,8 @@
                         <asp:TextBox ID="txtCP" runat="server"></asp:TextBox>
                     </td>
                     <td class="auto-style70">
-                        &nbsp;</td>
+                        <asp:RegularExpressionValidator ID="rvCodigoPostal" runat="server" ControlToValidate="txtCP" ErrorMessage="RegularExpressionValidator" ValidationExpression="^\d{4}$">Debe ingresar un codigo postal valido</asp:RegularExpressionValidator>
+                    </td>
                     <td class="auto-style47">
                         &nbsp;</td>
                 </tr>
