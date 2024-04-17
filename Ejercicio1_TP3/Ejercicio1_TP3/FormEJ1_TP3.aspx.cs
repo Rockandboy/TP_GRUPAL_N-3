@@ -65,12 +65,14 @@ namespace Ejercicio1_TP3
             string Usuario = txtUsuario.Text.Trim();
             string Email = txtEmail.Text.Trim();
             lblMensajeUsuario.Text = "Bienvenido/a " + Usuario;
-            // Limpia el DropDownList (ddlLocalidades)
+            LimpiarCamposUsuario();
+        }
+        private void LimpiarCamposUsuario()
+        {
             ddlLocalidades.ClearSelection();
-            txtCP.Text="";
+            txtCP.Text = "";
             txtUsuario.Text = "";
             txtEmail.Text = "";
-           
         }
     }
  }
