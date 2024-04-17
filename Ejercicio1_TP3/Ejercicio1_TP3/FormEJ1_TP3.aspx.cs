@@ -74,5 +74,10 @@ namespace Ejercicio1_TP3
             txtUsuario.Text = "";
             txtEmail.Text = "";
         }
+
+        protected void btInicio_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("Inicio.aspx");
+        }
     }
  }
