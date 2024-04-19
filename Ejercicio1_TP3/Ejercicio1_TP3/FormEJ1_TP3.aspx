@@ -189,27 +189,6 @@
             width: 276px;
             height: 33px;
         }
-        .auto-style78 {
-            height: 7px;
-            width: 11px;
-        }
-        .auto-style79 {
-            width: 131px;
-            text-align: right;
-            height: 7px;
-        }
-        .auto-style80 {
-            width: 180px;
-            height: 7px;
-        }
-        .auto-style81 {
-            width: 193px;
-            height: 7px;
-        }
-        .auto-style82 {
-            width: 276px;
-            height: 7px;
-        }
         .auto-style83 {
             width: 11px;
             height: 22px;
@@ -229,6 +208,69 @@
         .auto-style87 {
             width: 276px;
             height: 22px;
+        }
+        .auto-style99 {
+            width: 11px;
+            height: 40px;
+        }
+        .auto-style100 {
+            width: 131px;
+            text-align: right;
+            height: 40px;
+        }
+        .auto-style101 {
+            width: 180px;
+            height: 40px;
+        }
+        .auto-style102 {
+            width: 193px;
+            height: 40px;
+        }
+        .auto-style103 {
+            width: 276px;
+            height: 40px;
+        }
+        .auto-style104 {
+            width: 11px;
+            height: 28px;
+        }
+        .auto-style105 {
+            width: 131px;
+            text-align: right;
+            height: 28px;
+        }
+        .auto-style106 {
+            width: 180px;
+            height: 28px;
+        }
+        .auto-style107 {
+            width: 193px;
+            height: 28px;
+        }
+        .auto-style108 {
+            width: 276px;
+            height: 28px;
+        }
+        .auto-style110 {
+            width: 131px;
+            text-align: right;
+            height: 24px;
+        }
+        .auto-style111 {
+            width: 11px;
+            height: 24px;
+        }
+        .auto-style112 {
+            width: 180px;
+            height: 24px;
+        }
+        .auto-style113 {
+            width: 193px;
+            height: 24px;
+        }
+        .auto-style114 {
+            width: 276px;
+            height: 24px;
         }
     </style>
 </head>
@@ -323,7 +365,7 @@
                         <asp:Label ID="lbNombreUsuario" runat="server" Text="Nombre Usuario"></asp:Label>
                     </td>
                     <td class="auto-style41">
-                        <asp:TextBox ID="txtUsuario" runat="server" ValidationGroup="gpUsuarios"></asp:TextBox>
+                        <asp:TextBox ID="txtUsuario" runat="server" ValidationGroup="gpUsuarios" CausesValidation="True"></asp:TextBox>
                     </td>
                     <td class="auto-style67">
                         <asp:RequiredFieldValidator ID="rfvUsuario" runat="server" ControlToValidate="txtUsuario" ErrorMessage="Ingrese un nombre de usuario" ValidationGroup="gpUsuarios"></asp:RequiredFieldValidator>
@@ -337,68 +379,73 @@
                         <asp:Label ID="lbPass" runat="server" Text="Contraseña:"></asp:Label>
                     </td>
                     <td class="auto-style41">
-                        <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" ValidationGroup="gpUsuarios"></asp:TextBox>
+                        <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" ValidationGroup="gpUsuarios" CausesValidation="True"></asp:TextBox>
                     </td>
                     <td class="auto-style67">
-                        <asp:RequiredFieldValidator ID="rfvContraseña" runat="server" ControlToValidate="txtPassword" Enabled="False" ErrorMessage="Ingrese una contraseña" ValidationGroup="gpUsuarios"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="rfvContraseña" runat="server" ControlToValidate="txtPassword" ErrorMessage="Ingrese una contraseña" ValidationGroup="gpUsuarios"></asp:RequiredFieldValidator>
                         </td>
                     <td class="auto-style48">
                         &nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style13"></td>
-                    <td class="auto-style14">
+                    <td class="auto-style111"></td>
+                    <td class="auto-style110">
                         <asp:Label ID="lbRepetirPass" runat="server" Text="Repetir Contraseña"></asp:Label>
                     </td>
-                    <td class="auto-style41">
-                        <asp:TextBox ID="txtRepeatPass" runat="server" TextMode="Password" ValidationGroup="gpUsuarios"></asp:TextBox>
+                    <td class="auto-style112">
+                        <asp:TextBox ID="txtRepeatPass" runat="server" TextMode="Password" ValidationGroup="gpUsuarios" CausesValidation="True"></asp:TextBox>
                     </td>
-                    <td class="auto-style67">
+                    <td class="auto-style113">
                         <asp:CompareValidator ID="cvPass" runat="server" ControlToCompare="txtPassword" ControlToValidate="txtRepeatPass" ErrorMessage="La contraseña debe concidir" ValidationGroup="gpUsuarios">La contraseña debe concidir</asp:CompareValidator>
                         </td>
-                    <td class="auto-style48">
+                    <td class="auto-style114">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtRepeatPass" ErrorMessage="RequiredFieldValidator" ValidationGroup="gpUsuarios">Debe repetir la contraseña</asp:RequiredFieldValidator>
                         </td>
                 </tr>
                 <tr>
-                    <td class="auto-style31"></td>
-                    <td class="auto-style39">
+                    <td class="auto-style104"></td>
+                    <td class="auto-style105">
                         <asp:Label ID="lbEmail" runat="server" Text="Email:"></asp:Label>
                     </td>
-                    <td class="auto-style38">
-                        <asp:TextBox ID="txtEmail" runat="server" Height="20px" ValidationGroup="gpUsuarios"></asp:TextBox>
+                    <td class="auto-style106">
+                        <asp:TextBox ID="txtEmail" runat="server" Height="20px" ValidationGroup="gpUsuarios" CausesValidation="True"></asp:TextBox>
                     </td>
-                    <td class="auto-style70">
+                    <td class="auto-style107">
                         <asp:RegularExpressionValidator ID="RevEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="Ingrese un Email valido" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ValidationGroup="gpUsuarios">Ingrese un Email Valido</asp:RegularExpressionValidator>
                     </td>
-                    <td class="auto-style47">
+                    <td class="auto-style108">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtEmail" ErrorMessage="RequiredFieldValidator" ValidationGroup="gpUsuarios">Debe ingresar un email</asp:RequiredFieldValidator>
                         </td>
                 </tr>
                 <tr>
-                    <td class="auto-style78"></td>
-                    <td class="auto-style79">
+                    <td class="auto-style99"></td>
+                    <td class="auto-style100">
                         <asp:Label ID="lbCP" runat="server" Text="CP:"></asp:Label>
                     </td>
-                    <td class="auto-style80">
-                        <asp:TextBox ID="txtCP" runat="server" ValidationGroup="gpUsuarios"></asp:TextBox>
+                    <td class="auto-style101">
+                        <asp:TextBox ID="txtCP" runat="server" ValidationGroup="gpUsuarios" CausesValidation="True"></asp:TextBox>
                     </td>
-                    <td class="auto-style81">
+                    <td class="auto-style102">
                         <asp:RegularExpressionValidator ID="rvCodigoPostal" runat="server" ControlToValidate="txtCP" ErrorMessage="RegularExpressionValidator" ValidationExpression="^\d{4}$" ValidationGroup="gpUsuarios">Debe ingresar un codigo postal valido</asp:RegularExpressionValidator>
                     </td>
-                    <td class="auto-style82">
+                    <td class="auto-style103">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtCP" ErrorMessage="RequiredFieldValidator" ValidationGroup="gpUsuarios">Debe ingresar un CP</asp:RequiredFieldValidator>
                         </td>
                 </tr>
                 <tr>
-                    <td class="auto-style13"></td>
-                    <td class="auto-style14">
+                    <td class="auto-style111"></td>
+                    <td class="auto-style110">
                         <asp:Label ID="lbElegirLocalidad" runat="server" Text="Localidades"></asp:Label>
                     </td>
-                    <td class="auto-style41">
-                        <asp:DropDownList ID="ddlLocalidades" runat="server" OnSelectedIndexChanged="ddlLocalidades_SelectedIndexChanged" ValidationGroup="gpUsuarios">
+                    <td class="auto-style112">
+                        <asp:DropDownList ID="ddlLocalidades" runat="server" OnSelectedIndexChanged="ddlLocalidades_SelectedIndexChanged" ValidationGroup="gpUsuarios" CausesValidation="True">
+                            <asp:ListItem>--Seleccione--</asp:ListItem>
                         </asp:DropDownList>
                     </td>
-                    <td class="auto-style67">
+                    <td class="auto-style113">
                         </td>
-                    <td class="auto-style48">
+                    <td class="auto-style114">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="ddlLocalidades" ErrorMessage="RequiredFieldValidator" InitialValue="--Seleccione--" ValidationGroup="gpUsuarios">Debe seleccionar una localidad</asp:RequiredFieldValidator>
                         </td>
                 </tr>
                 <tr>
